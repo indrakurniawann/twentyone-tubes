@@ -16,7 +16,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .logo- img{
@@ -69,7 +69,31 @@
     transition: all 0.75s;
 }
 
+.username{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 .username input{
+    margin-top: 5px;
+    font-size: 16px;
+    width: 178px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 10px;
+    border: 1px solid rgba(224, 224, 224, 0.637);
+}
+
+.username input:hover{
+    background-color: rgba(224, 224, 224, 0.637);
+}
+
+.email{
+    margin-top: 20px;
+}
+.email input{
     margin-top: 5px;
     font-size: 16px;
     width: 400px;
@@ -79,7 +103,7 @@
     border: 1px solid rgba(224, 224, 224, 0.637);
 }
 
-.username input:hover{
+.email input:hover{
     background-color: rgba(224, 224, 224, 0.637);
 }
 
@@ -101,10 +125,22 @@
     margin-top: 20px;
 }
 
-.password input{
+.password-create input{
     margin-top: 5px;
+    font-size: 16px;
+    width: 400px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 10px;
+    border: 1px solid rgba(224, 224, 224, 0.637);    ;
+}
+.password-create input:hover{
+    background-color: rgba(206, 202, 202, 0.637);
 }
 
+.password-create{
+    margin-top: 20px;
+}
 
 .btn-form{
     margin-top: 80px;
@@ -118,7 +154,7 @@ form .saved{
 }
 
 .saved .checkbox{
-    margin-right: 150px;
+    margin-right: 144px;
     cursor: pointer;
 }
 .saved .checkbox label{
@@ -155,7 +191,6 @@ form .saved{
 
 .btn-form button:hover{
     background-color: #478bbe;
-    /* background-color: #65c2f5; */
     color: rgb(255, 255, 255);
     cursor: pointer;
     transition: all 0.5s;
