@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-si: ;
+}
+
+.signin{
+    display: flex;
+    background-image: url('../image/wall-8.jpg');
+    background-size: cover;
+}
+
+.logo-{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.logo- img{
+    width: 50px;
+    height: 50px;
+}
+
+.signin .signin2{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+}
+
+.signin .to-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.signup-lay2{
+    text-align: center;
+}
+
+.signup-lay2 label{
+    color: white;
+    font-size: 40px;
+}
+
+.signup-lay2 a{
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.signup-lay2 a:hover{
+    background-color: white;
+    color: #306084;
+    transition: all 0.75s;
+}
+
+.username input{
+    margin-top: 5px;
+    font-size: 16px;
+    width: 400px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 10px;
+    border: 1px solid rgba(224, 224, 224, 0.637);
+}
+
+.username input:hover{
+    background-color: rgba(224, 224, 224, 0.637);
+}
+
+
+.password input{
+    margin-top: 5px;
+    font-size: 16px;
+    width: 400px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 10px;
+    border: 1px solid rgba(224, 224, 224, 0.637);    ;
+}
+.password input:hover{
+    background-color: rgba(206, 202, 202, 0.637);
+}
+
+.password{
+    margin-top: 20px;
+}
+
+.password input{
+    margin-top: 5px;
+}
+
+
+.btn-form{
+    margin-top: 80px;
+}
+
+form .saved{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.saved .checkbox{
+    margin-right: 150px;
+    cursor: pointer;
+}
+.saved .checkbox label{
+    padding: 5px;
+}
+.saved .checkbox label:hover{
+    color: #306084;
+    cursor: pointer;
+}
+
+.saved .checkbox input:hover{
+    cursor: pointer;
+}
+
+.saved .checkbox input:checked{
+    accent-color: #306084;
+}
+
+
+.btn-form{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-form button{
+    padding: 10px 177px;
+    border-radius: 10px;
+    color: white;
+    background-color: #306084;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+
+
+.btn-form button:hover{
+    background-color: #478bbe;
+    /* background-color: #65c2f5; */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.saved .forgot-password{
+    text-decoration: none;
+    color: black;
+    padding: 0px 5px;
+}
+
+
+.forgot-password:hover{
+    color: #306084;
+}
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: url('../image/Rectangle\ 12.png');
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    margin: 5px 0px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin: 20px 20px;
+}
+
+.nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: rgb(235, 231, 231);
+    border-radius: 5px;
+    text-shadow: 2px 2px slategray ;
+}
+
+.nav li a:hover{
+    color: rgba(39, 38, 38, 0.781);
+    background-color: aliceblue;
+    text-shadow: none;
+    box-shadow: 2px 2px slategray;
+    transition: all 0.5s ease-in;
+}
+
+.account{
+margin: 20px 0px;
+margin-left: 14%;
+}
+
+.account a{
+    text-decoration: none;
+    font-size: 21px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.account .signin{
+    background-color: aliceblue;
+    border:  aliceblue 1px solid;
+    color: rgba(39, 38, 38, 0.781);
+    box-shadow: 2px 2px slategray;
+}
+
+.account .signin:hover{
+    background-color: transparent;
+    border: aliceblue 1px solid;
+    color: aliceblue;
+    transition: all 1s;
+}
+
+.account .signup{
+    background-color: transparent;
+    color: aliceblue;
+    border: solid aliceblue 1px;
+    margin-left: 8px;
+    text-shadow: 2px 2px slategray;
+    box-shadow: 2px 2px slategray;
+}
+
+.account .signup:hover{
+    background-color: aliceblue;
+    border:  aliceblue 1px solid;
+    color: rgba(39, 38, 38, 0.781);
+    text-shadow: none;
+    transition: all 1s;
+}
+
