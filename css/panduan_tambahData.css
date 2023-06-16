@@ -29,13 +29,31 @@ form{
     left: 5%;
 }
 
-form input{
+form .hari,.kekuatan_gempa, .pusat_gempa, .kerugian,.area_terdampak,.korban_jiwa{
     padding-left: 10px;
     text-align: left;
     font-size: 15px;
     border-radius: 5px;
     border: 1px solid black;
     width: 800px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+form .input-form-hbt{
+    display: flex;
+    margin-top: 12px;
+    gap: 20px;
+}
+
+form .waktu1,.tanggal1,.bulan1,.tahun1{
+    margin-left: 5px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 171px;
     height: 35px;
     margin-top: 5px;
 }
