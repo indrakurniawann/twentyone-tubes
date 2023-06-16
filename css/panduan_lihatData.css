@@ -5,6 +5,11 @@
 
 }
 
+
+.informasi{
+    width: 100%;
+}
+
 .heading{
     display: flex;
     background-color: rgb(91, 165, 42);
@@ -19,13 +24,14 @@
 }
 .title_page{ 
     margin-top: 5%;
-    margin-left: 5%;
     font-size: 30px;
+    text-align: center;
 }
 
 .table{
-    display: flex;
     justify-content: center;
+    align-items: center; 
+    display: flex;
     margin: 40px;
 }
 
@@ -46,11 +52,14 @@
 }
 
 .button{
-    margin-left: 6%;;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 3%;
 }
 
-.tambah-data,.update-data,.dashboard{
-    background-color: rgba(46, 148, 196, 0.993);
+.informasi-tambah-data,.informasi-dashboard{
+    background-color:  rgba(46, 148, 196, 0.993);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     padding: 11px;
