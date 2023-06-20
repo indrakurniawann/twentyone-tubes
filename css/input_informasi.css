@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Space+Grotesk&family=Sunflower:wght@300&display=swap');
+
+*{
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: sunflower; */
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background: #dbdbdb9b;
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------------- warna ---------------------------------------*/
+:root{
+  --biru-1: #2fb7e1;
+  --biru-2: #1F3640;
+  --biru-3: #0C5171;
+  --shadow: #aaa9a9;
+  --background:#dbdbdb9b;
+}
+
+form{
+    position: absolute;
+    padding: 20px;
+    margin-top: 5vh;
+    background: rgb(205, 204, 204);
+    border-radius: 1rem;
+}
+
+form .container{
+    position: relative;
+    display: flexbox;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 30vw;
+}
+form .input-form-hbtw{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 30vw;
+}
+
+form .container .full{
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 0px transparent solid;
+    border-radius: .5rem;
+    outline: none;
+    margin-bottom: 10px;  
+    margin-top: 5px;
+    width: 94%;
+}
+
+form .not-full{
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 5vw;
+    border-radius: .5rem;
+    outline: none;
+    border: transparent 1px solid;
+}
+
+form .button{
+    background-color: #0C5171;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-right:10px;
+}
+
+.button .button-cancel{
+    background-color: rgba(46, 148, 196, 0.993);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 10px 11px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+form .button:hover{
+    background-color: rgba(3, 115, 167, 0.993); 
+    cursor: pointer;
+}
+
+form .icon-close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color:#0C5171; 
+    width: 45px;
+    border-radius: 1rem;
+    padding-top: 4px;
+    border: 8px solid  #cdcccc;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icon-close a{
+    font-size: 30px;
+    color: white;
+}
+
+form .icon-close:hover{
+    background-color: rgba(3, 115, 167, 0.993); 
+    cursor: pointer;
+}
+   

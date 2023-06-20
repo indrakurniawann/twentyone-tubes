@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Space+Grotesk&family=Sunflower:wght@300&display=swap');
 
-*{
+  *{
     box-sizing: 0;
     padding: 0;
     margin: 0;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    font-family: Comfortaa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: sunflower; */
     scroll-behavior: smooth;
 }
 
@@ -24,12 +24,18 @@ body{
     --shadow: #aaa9a9;
     --background:#dbdbdb9b;
 }
+/* ------------------------ transform penulisan ---------------- */
+
+    /* scale(angka), scaleX(angka, scaleY(angka)) */
+    /* rotate(deg), rotateX(deg), rotateY(deg) */
+    /* skew(deg), scewX(deg), scewY(deg) */
+    /* translate(px), translateX(px), translateY(px) */
 
 /* -------------------------- dashbaoard page ----------------------------- */
 header{
     height: 80px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.835);
+    background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -63,38 +69,40 @@ header{
 .navigation a{
     color: #b8bbbc;
     text-decoration: none;
-    font-size: 18px;
-    padding: 20px 12px;
+    font-size: 20px;
     position: relative;
-    border: solid transparent 2px;
+    margin: 0px 10px;
+    transition: 1s;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    height: 3px;
+    background-color: #1F3640;
+    border-radius: 5px;
+    transform-origin: right;
+    transform-origin: left;
+    transform: scaleX(0);    
+    transition: .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);    
 }
 
 .navigation a:hover{
     color: #1F3640;
-    border-radius: 10px;
     transition: all .5s;
 }
 
-    .navigation .active{
-        color: #1F3640;
+.navigation .active{
+    color: #1F3640;
 }
 
-.navigation a:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 20px;
-    width: 100%;
-    height: 3px;
-    background-color: #1F3640;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-.navigation a.active:after {
-    transform: scaleX(1);
-}
 /* --------------------- Button login ----------------------- */
 
 .btnlogin-page{
@@ -132,146 +140,223 @@ header{
 
 /* ------------------------------ title --------------------------------- */
 
-.main{
-    position: relative;
-    background-color: #fff;
-    top: 120px;
+.dashboard-page{
+    top: 120px;  
     left: 25vw;
-    height: 70vh;
-    width: 72vw;
-    border-radius: 1rem;
-}
-
-.main .bottom-main{
-    position: relative;
-    border-radius: 1rem;
-    background-color: #d2e3ea;
-    height: 55vh;
-    width: 70vw;
-    top: 40px;
-    left: 1vw;
-    box-shadow: 0px 4px 10px #aaa9a9;
-}
-
-.username{
-    position: relative;
-    top: 20px;
-    width: 50%;
-    left: 30px;
-}
-
-.username h1{
-    position: relative;
-    color: #1F3640;
-    font-size: 45px;
-    font-family: comfortaa;
-}
-
-.username h2,label{
-    position: relative;
-    color: #969696;
-    font-size: 18px;
-}
-
-.search{
-    display: flex;
     position: absolute;
-    top: 40px;
-    width: 20vw;
-    padding: 10px;
+}
+
+.head-dashboard{
+    display: flex;
+    justify-content: space-between;
+    width: 72vw;
+    margin: 20px 0px;
+}
+
+.head-dashboard .search{
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 1rem;
     right: 1vw;
     box-shadow: 0px 5px 10px #dadada;
     background:white;
 }
 
-.search:hover{
+.head-dashboard .search:hover{
     background: #eeeeee;
     box-shadow: 0px 5px 10px #dadada;
-    /* border: 1px solid #e4e5e6; */
 }
 
-#mySearch.clicked{
-    box-shadow: 0px 5px 10px #dadada;
-    /* background:white; */
-    background:red;
-    border: 1px solid #e4e5e6;
-    border: transparent 1px solid;
-}
-
-#mySearch input.clicked{
-    background: blue;
-}
-
-.search input{
+.head-dashboard .search input{
     background:transparent;
     position: relative;
     outline: none;
-    left: 10px;
-    font-size: 16px;
-    font-family: comfortaa;
+    left: 15px;
+    width: 21vw;
+    font-size: 20px;
     color: var(--biru-2);
     border: transparent 1px solid;
+    padding: 5px 0px;
 }
 
-.search img{
+.head-dashboard .search img{
     position: absolute;
+    z-index: 1;
     right: 1vw;
     background-color: transparent;
     padding-bottom: 1px;
     width: 20px;
-    height: 20px;
-}
-
-.search img{
     cursor: pointer;
+    /* height: 20px; */
 }
 
 /* main side  */
-.left-side{
+
+.main{
+    display: flex;
+    justify-content: space-between;
     position: absolute;
-    left: 2vw;
-    top: 4vh;
-    width: 20vw;
-    height: 47vh;
-    background: white;
+    height: 50vh;
+    width: 72vw;
     border-radius: 1rem;
+    box-shadow: #c9c7c7 0px 10px 10px;
+    background:linear-gradient(90deg, #b8ecfc, #ffffff);
 }
 
-.side-atas{
+.username{
+    position: relative;
+    width: 40vh;
+}
+
+.username h1{
+    position: relative;
+    color: #1F3640;
+    font-size: 30px;
+}
+
+.username h2{
+    position: relative;
+    color: #325665;
+     margin: 10px 0px;
+    font-size: 18px;
+}
+
+.left-side{
+    display: flex;
+    left: 10vh;
+    align-items: center;
+    position: relative;
+    width: 30%;
+    height: 50vh;
+}
+
+.right-side{
+    position: relative;
+    top: 5vh;
+    right: 5vh;
+    border-radius: 1rem;
+    width: 50%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    background:#1F3640;
-    width: 100%;
-    height: 30%;
-    border-radius: 1rem;
-    box-shadow: #b8bbbc 0px 10px 10px;
 }
 
-.realtime_clock span,label{
-    font-size: 40px;
+.right-side img{
+    position: relative;
+    top: -5vh;
+    width: 30vw;
+    height: 55vh;
+}
+
+/* tabel informasi */
+
+.informasi{
+    min-height: 85vh;
+    position: absolute;
+    background-color: #fff;
+    top: 510px;
+    left: 25vw;
+    height: 70vh;
+    width: 72vw;
+    border-radius: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.side-bar{
+    position: fixed;
+    top: 80px;
+    width: 24vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.realdate{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 20%;
+    border-radius: .5rem;
+    padding: 10px;
+    box-shadow: #aaa9a9 0px 3px 10px;
+}
+
+.realdate span,label{
+    position: relative;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: comfortaa;
+}
+
+.realtime_clock{
+    position: relative;
+    top: 21px;
+    margin: 20px;
+    padding: 10px;
+    width:21vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: #aaa9a9 0px 3px 10px;
+}
+
+.realtime_clock #hours,#minutes{
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+    background:#325665;
+    font-family: comfortaa;
+    border-radius: .5rem;
+}
+
+.realtime_clock #dd{
+    padding: 10px;
+    font-size: 50px;
+    color: #325665;
+    background:transparent;
+    font-family: comfortaa;
+    border-radius: .5rem;
+}
+
+.second-area{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.realtime_clock .second-area{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background:#325665;
+    font-family: comfortaa;
+    border-radius: .5rem;
+}
+
+.second-area #area{
     color: white;
     font-family: comfortaa;
 }
 
-.bottom-main img{
-    position: absolute;
-    width: 30vw;
-    height: 70vh;
-    top: -6vh;
-    right: 5vh;
+.second-area .area2{
+    background: white;
+    margin-top: 4px;
+    margin-left: 2px;
+    height: 50%;
+    width: 100%;
+    border-radius: .5rem;
 }
 
-.team{
-    background-color: #fff;
-    position: fixed;
-    display: flex;
-    top: 120px;
-    left: 3vw;
-    width: 20vw;
-    height: 70vh;
-    border-radius: 1rem;
-    justify-content: center;
+ion-icon{
+    margin-top: 2px;
+    font-size: 35px;
 }

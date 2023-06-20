@@ -4,8 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    font-family: Comfortaa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 :root{
@@ -32,8 +31,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 3rem;
-  
-
 }
 
 .daftar-side{
@@ -44,14 +41,14 @@ body{
 }
 
 .daftar-side label{
-    font-size: 24px;
+    font-size: 30px;
     color: white;
 }
 
 .daftar-side a{
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 20px;
     border: 1px solid white;
     border-radius: 1rem;
@@ -66,7 +63,7 @@ body{
 
 .container-2{
     position: relative;
-    left: 26vh;
+    left: 31vh;
     width: 50%;
     height: 100%;
     border-radius: 3rem;

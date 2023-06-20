@@ -26,7 +26,7 @@
     mysqli_query($conn, $query);
 
     if ($query) {   
-         header("Location:dashboard.php");
+         header("Location:../informasi.php");
     }else {
         echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
     }

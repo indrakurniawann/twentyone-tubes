@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..//css/signin.css">
+    <link rel="stylesheet" href="../css/signin.css">
     <title>Sistem Informasi Pendistribusian Logistik Pasca Tsunami | Sign In</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <!-- signin2     -->
         <div class="container-2">
             <div class="container-3">
-                <form action="signin_kirimData.php" method="post">
+                <form action="kirimData/signin_kirimData.php" method="post">
                 <div class="logo">
                     <img src="../icon/Graphic_Elements.png" alt="">
                 </div>

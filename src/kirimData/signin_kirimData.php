@@ -20,17 +20,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($email == $adminemail && $password == $adminPassword) {
             session_start();
             $_SESSION['role'] = 'admin';
-
+            
             header("location: dashboard.php");
             exit();
         } elseif ($hitungdata) {
             session_start();
             $_SESSION['role'] = 'user';
 
-            header("location: dashboard.php");
+            header("location:../dashboard.php");
             exit();
         } else {
-            $error = "Email atau password salah.";
+            $error = "<div class='alert alert-danger'> Username atau password salah</div>";
         }
     }
 }
