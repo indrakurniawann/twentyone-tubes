@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Space+Grotesk&family=Sunflower:wght@300&display=swap');
+
+*{
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: sunflower; */
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background: #dbdbdb9b;
+}
+
+/*--------------------------- warna ---------------------------------------*/
+:root{
+  --biru-1: #2fb7e1;
+  --biru-2: #1F3640;
+  --biru-3: #0C5171;
+  --shadow: #aaa9a9;
+  --background:#dbdbdb9b;
+}
+
+/* -------------------------- dashbaoard page ----------------------------- */
+header{
+  height: 80px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.835);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99 ;
+  
+}
+
+
+.icon{
+  position: relative;
+  display: flex;
+  height: 50px;
+  left: 50px;
+  top: 6px; 
+}
+
+.logo-name{
+  height: 50px;
+  left: 50px;
+  top: 6px;    
+}
+
+
+.navigation{
+  position: relative;
+  top: 0;
+}
+
+.navigation a{
+  color: #b8bbbc;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  margin: 0px 10px;
+}
+
+.navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  height: 3px;
+  background-color: #1F3640;
+  border-radius: 5px;
+  transform-origin: right;
+  transform-origin: left;
+  transform: scaleX(0);    
+  transition: .5s;
+}
+
+.navigation a:hover::after{
+  transform: scaleX(1);    
+}
+
+.navigation a:hover{
+  color: #1F3640;
+  transition: all .5s;
+}
+
+.navigation .active{
+  color: #1F3640;
+}
+
+/* --------------------- Button login ----------------------- */
+
+.btnlogin-page{
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  color: #1F3640;
+  border-radius: 1rem;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+}
+
+.btnlogin-page:hover{
+  color:  rgba(255, 255, 255, 0.848);
+  background: transparent;
+  transition: all .5s;
+}
+
+.btnlogin-popup{
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 5px 0px;
+  right: 50px;
+  box-shadow: 0px 4px 10px #c7c6c6;
+}
+
+
+.btnlogin-popup:hover{
+  background: #1F3640;
+  transition: all .5s;
+}
+
+/* ----------------------- body --------------------------- */
+.informasi{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.quote-text{
+    position: relative;
+    top: 2vh;
+    left: 7vh;
+}
+
+.quote-text h1{
+    color: #1F3640;
+    background: #ffffffb4;
+    border-radius: 1rem;
+    padding-left: 10px;
+    box-shadow: 0px 3px 10px white;
+}
+
+.quote-text h2{
+    color: #fff;
+    font-size: 20px;
+}
+.page-1{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 80px;
+    width: 72vw;
+    height: 40vh;
+    background:linear-gradient(90deg, #0C5171, #fff);
+    border-radius: 1rem;
+}
+
+
+.page-2{
+    position: absolute;
+    top: 380px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.page-2 .table{
+    padding:10px 20px;
+    border-radius: 1rem;
+}
+
+.table-auto th{
+    padding: 10px 20px;
+    text-align: center;
+    background: #0C5171;
+    border-radius: .5rem;
+    color: white;
+}
+
+.btn-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+    border-radius: .5rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.page-2 a:hover{
+    background: #178ec5;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.button a{
+  color: white;
+  text-decoration: none;
+  background: #0C5171;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+
+.table-auto td{
+    padding: 5px 10px;
+    text-align: center;
+    color: #083448;
+    background-color: white;
+}
+
+.image{
+    position: relative;
+    right: 2vw;
+    top: -7vh;
+}
+.image img{
+    width: 50vh;
+    height: 50vh;
+}
+
+

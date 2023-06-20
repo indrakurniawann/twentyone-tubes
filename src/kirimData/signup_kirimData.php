@@ -21,7 +21,7 @@
      mysqli_query($conn, $query);
 
      if ($query) {   
-        header("Location:signin.php");
+        header("Location:../signin.php");
         }else {
         echo "<div class='alert alert-danger'> Data Gagal disimpan.</div>";
      }

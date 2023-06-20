@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..//css/signup.css">
+    <link rel="stylesheet" href="../css/signup.css">
     <title>Sistem Informasi Pendistribusian Logistik Pasca Tsunami | Sign up</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div class="container-2">
             <a href="dashboard.php" class="btn-close"><ion-icon name="close-outline"></ion-icon></a>
             <div class="container-3">
-                <form action="signup_kirimData.php" method="post">  
+                <form action="kirimData/signup_kirimData.php" method="post">  
                     <div class="logo">
                         <img src="../icon/Graphic_Elements.png" alt="">
                     </div>
